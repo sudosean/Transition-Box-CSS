@@ -1,0 +1,81 @@
+body {
+	font-family: Helvetica, Arial;
+	color: #fff;
+	background: #01355f url('../img/bg.png') no-repeat fixed;
+}
+
+.wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 20px;
+	text-align: center;
+}
+
+.box {
+	position: relative;
+	background: gold;
+	float: left;
+	width: 360px;
+	height: 360px;
+	margin: 20px;
+	overflow: hidden;
+	padding: 20px;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.box .more {
+	padding: 20px;
+	opacity: 0;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition:all .5s ease;
+	transition: all .5s ease;
+}
+
+.box.cloud {
+	background: gold url('../img/raincloud.jpg') no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.box.data{
+	background: gold url('../img/elephantdata.png') no-repeat;
+	background-size: 200%;
+	background-position: center;
+
+}
+.box.java{
+	background: gold url('../img/javared.png') no-repeat;
+	background-size: 200%;
+	background-position: center;
+}
+.box.test{
+	background: gold url('../img/jscript.png') no-repeat;
+	background-size: 150%;
+	background-position: center;
+}
+
+.box:hover .more {
+	opacity: 1;
+}
+
+.box:hover h1 {
+	display: none;
+}
+
+.box:hover {
+	background-size: 500%;
+}
